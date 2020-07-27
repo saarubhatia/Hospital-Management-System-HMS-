@@ -1,0 +1,57 @@
+.image
+{
+  float: left;
+  margin-left: 150px;
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+.card
+{
+  width: 80%;
+  margin-left: 100px;
+  height: 20%;
+}
+h5
+{
+  float: left;
+  padding-left: 80px;
+}
+.view
+{
+  margin-left: 400px;
+  width: 25px;
+}
+p
+{
+  float: left;
+  padding-left: 130px;
+}
+.modal-title
+{
+  padding-left: 10px;
+}
+.common
+{
+  color: white;
+}
+.modal-dialog
+{
+  width: 100%;
+}
+.row1{
+  margin-left:-120px;
+  margin-top: 50px;;
+}
+.presc{
+  margin-top: -100px;;
+}
+
+.btn-lg
+{
+  width: 100%;
+}
+h3{
+margin-top: 15%;
+text-align: center;
+}

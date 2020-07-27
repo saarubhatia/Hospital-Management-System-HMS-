@@ -1,0 +1,82 @@
+<%- include ('partials/header') -%>
+        <div class="container">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="a0"> <h1 id="presc"> Assign Rooms</h1></th>
+                    <th scope="col">
+                          <form>
+                            <div class="form-group">
+                                <label> Date: </label> <input type="date" class="form-control" id="date">
+                            </div>
+                          </form>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td>Treatment ID</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Patient ID</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Room ID</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Doctors Assigned</h3>
+            
+
+            <table class="table table1">
+                <thead>
+                  <tr>
+                    <th scope="col">Doctors ID</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody1">
+                  <tr>
+                    <td>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" class="a2">
+                            </div>
+                        </form>
+                    </td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-outline-info waves-effect btn0 add-row"> + </button>
+                    </td>
+                  </tr>
+                </tbody>
+                  <tr>
+                      <td>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-outline-info waves-effect btn0">SUBMIT</button>
+                      </td>
+                  </tr>
+              </table>
+        </div>
+<%- include ('partials/footer') -%>

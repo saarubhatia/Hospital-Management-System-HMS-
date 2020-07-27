@@ -1,0 +1,106 @@
+<%- include ('partials/header') -%>
+        <div class="container">
+            <form action="/DocAddPresPOST" method="POST">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="a0"> <h1 id="presc"> Prescription:</h1></th>
+                    <th scope="col">
+                            <div class="form-group">
+                                <label class="label1"> Date: </label> <input type="date" name="t_date" class="form-control" id="date">
+                            </div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Doctor Name</td>
+                            <td>
+                                    <div class="form-group">
+                                        <input type="text" name="t_d_name" class="form-control" class="a1">
+                                    </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Patient ID</td>
+                            <td>
+                                    <div class="form-group">
+                                        <input type="text" name="t_pid" class="form-control" class="a1">
+                                    </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Chief Complaints</td>
+                            <td>
+                                    <div class="form-group">
+                                        <input type="text" name="t_cc" class="form-control" class="a1">
+                                    </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Diagnosis</td>
+                            <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>TREATMENT GIVEN</h3>
+            
+
+            <table class="table table1">
+                <thead>
+                  <tr>
+                    <th scope="col">Medicine Name</th>
+                    <th scope="col">Dosage</th>
+                    <th scope="col">Quantity(days)</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody1">
+                  <tr>
+                    <td>
+                            <div class="form-group">
+                                <input type="text" name="m_name" class="form-control" class="a2">
+                            </div>
+                    </td>
+                    <td>
+                        <div class="def-number-input number-input safari_only">
+                            <button class="btn btn-sm" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"><i class="fa fa-minus"></i></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                            <button class="btn btn-sm" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </td>
+                    <td>
+
+                            <div class="form-group">
+                                <input type="text" name="m_dosage" class="form-control" id="a3">
+                            </div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-info waves-effect btn0 add-row"> + </button>
+                    </td>
+                  </tr>
+                </tbody>
+                  <tr>
+                      <td colspan="2">
+                          COMMENTS
+                      </td>
+                      <td colspan="2">
+                            <div class="form-group">
+                                <textarea class="form-control" id="textarea"></textarea>
+                            </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="4">
+                      </td>
+                      <td>
+                        <button type="submit" class="btn btn-lg btn-outline-info waves-effect btn0">SUBMIT</button>
+                      </td>
+                  </tr>
+              </table>
+            </form>
+        </div>
+<%- include ('partials/footer') -%>

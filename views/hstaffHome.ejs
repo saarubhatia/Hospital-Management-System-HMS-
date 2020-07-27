@@ -1,0 +1,218 @@
+<%- include ('partials/header') -%>
+  <div class="container">
+    <div class="row row1" style="margin-left: -15%;">
+      <div class="col-md-4 col-sm-6 def">
+        <a href="HStaffAssignRoom"><div class="card" style="width: 20rem; height: 15.5rem;">
+          <img class="card-img-top" src="images/assign_rooms.png" alt="Card image cap">
+        </div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 def">
+        <a href="HStaffGenSal"><div class="card" style="width: 20rem; height: 15.5rem;">
+          <img class="card-img-top" src="images/generate_salary.png" alt="Card image cap">
+        </div></a>
+      </div>
+    </div>
+<div class="aroom">
+ <h3 class="hi">Undergoing Treatments</h3>
+</div>
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Treatment Id</th>
+            <th scope="col">Patient Name</th>
+            <th scope="col">Patient Id</th>
+            <th scope="col">View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View</button>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                  <table class="table table-bordered table-hover table-striped">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="a0"> <h1> Assign Rooms</h1></th>
+                        <th scope="col">
+                          <form>
+                            <div class="form-group">
+                              <label> Date: </label> <input type="date" disabled class="form-control" id="date">
+                            </div>
+                          </form>
+                        </th>
+                    </tr>
+                    </thead>  
+                    </table>
+                    </div>
+                <div class="modal-body">
+                  <table class="table table-bordered table-hover table-striped" >
+                    <tbody>
+                      <tr>
+                        <td>Treatment ID</td>
+                        <td>
+                        <form>
+                                        <div class="form-group">
+                                            <input type="text" disabled class="form-control" class="a1">
+                                        </div>
+                                      </form>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Patient ID</td>
+                                <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" disabled class="form-control" class="a1">
+                                        </div>
+                                      </form>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Room ID</td>
+                                <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" disabled class="form-control" class="a1">
+                                        </div>
+                                      </form>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Doctors Assigned</h3>
+                
+    
+                <table class="table table1">
+                    <thead>
+                      <tr>
+                        <th scope="col">Doctors ID</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody1">
+                      <tr>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" disabled class="form-control" class="a2">
+                                </div>
+                            </form>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+      </div>
+    </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>
+              <!-- Trigger the modal with a button -->
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View</button>
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+              <div class="modal-header">
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
+                  <tr>
+                      <th scope="col" class="a0"> <h1 id="presc"> Assign Rooms</h1></th>
+                      <th scope="col">
+                        <form>
+                          <div class="form-group">
+                            <label> Date: </label> <input type="date" disabled class="form-control" id="date">
+                          </div>
+                        </form>
+                      </th>
+                  </tr>
+                  </thead>  
+                  </table>
+                  </div>
+              <div class="modal-body">
+                <table class="table table-bordered table-hover table-striped" >
+                  <tbody>
+                    <tr>
+                      <td>Treatment ID</td>
+                      <td>
+                      <form>
+                                      <div class="form-group">
+                                          <input type="text" disabled class="form-control" class="a1">
+                                      </div>
+                                    </form>
+                              </td>
+                      </tr>
+                      <tr>
+                          <td>Patient ID</td>
+                              <td>
+                                  <form>
+                                      <div class="form-group">
+                                          <input type="text" disabled class="form-control" class="a1">
+                                      </div>
+                                    </form>
+                              </td>
+                      </tr>
+                      <tr>
+                          <td>Room ID</td>
+                              <td>
+                                  <form>
+                                      <div class="form-group">
+                                          <input type="text" disabled class="form-control" class="a1">
+                                      </div>
+                                    </form>
+                              </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <h3>Doctors Assigned</h3>
+              
+  
+              <table class="table table1">
+                  <thead>
+                    <tr>
+                      <th scope="col">Doctors ID</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody1">
+                    <tr>
+                      <td>
+                          <form>
+                              <div class="form-group">
+                                  <input type="text" disabled class="form-control" class="a2">
+                              </div>
+                          </form>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+    </div>
+  </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+</section>
+</div>
+<%- include ('partials/footer') -%>

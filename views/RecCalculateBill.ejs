@@ -1,0 +1,133 @@
+<%- include ('partials/header') -%>
+        <div class="container">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="a0"> <h1 id="bill">Bill</h1></th>
+                </tr>
+                </thead>
+            </table>
+            <table  class="table table-bordered table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                           <h3>Treatment ID: </h3>
+                        </th>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="treatID" name="treatID">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-info waves-effect btn0">ENTER</button>
+                        </td>
+                    </tr>
+                </thead>
+                    <tbody class="body1">
+                    <tr>
+                        <th>
+                            Room Charges:
+                        </th>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="roomcharges" name="roomcharges">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            (In RS)
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>
+                            Basic Consultancy:
+                        </th>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                <input type="text" disabled placeholder="RS 250" class="form-control" id="basic" name="basic">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            (In RS)
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>
+                            Treatment Charges:
+                        </th>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="treatcharges" name="treatcharges">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            (In RS)
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>
+                            Lab Charges:
+                        </th>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="labcharges" name="labcharges">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            (In RS)
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>
+                           Dispensary:
+                        </th>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="disp" name="disp">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            (In RS)
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <th>
+                           Total Bill Amount:
+                        </th>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="totalamnt" name="totalamnt">
+                                </div>
+                            </form>
+                        </td>
+                       
+                       
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="3">
+                            <button type="button" class="btn btn-lg btn-outline-info waves-effect btn1">SUBMIT</button>
+                        </td>
+                       
+                    </tr>
+                </tbody>          
+              </table>
+        </div>
+<%- include ('partials/footer') -%>

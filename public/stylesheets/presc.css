@@ -1,0 +1,17 @@
+#presc{
+    text-align:center;
+}
+#date{
+    display:inline-block;
+    width:60%;
+}
+.label1{
+    font-size: x-large;
+}
+.quantity{
+    width:120px;
+    text-align: center;
+}
+.label2{
+    display:inline-block;  
+}

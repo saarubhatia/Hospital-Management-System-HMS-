@@ -1,0 +1,23 @@
+.active
+{
+    background-color: #415F9D;
+}
+nav .navbar-nav li a, nav .navbar-header a{
+    color: white !important;
+    /* font-size: 1.2em; Increased Size */
+}
+nav .navbar-nav li a:hover{
+    background-color: #415F9D !important;
+}
+nav .navbar-header a img
+{
+    display: inline-block;
+    border-radius:5px;
+    margin-top:-3px;
+}
+nav .navbar-header a span
+{
+    display: inline-block;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em; /*Increased Size*/
+}

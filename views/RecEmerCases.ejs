@@ -1,0 +1,71 @@
+<%- include ('partials/header') -%>
+        <div class="container">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th colspan="2" scope="col" class="a0"> <h1 id="presc">Emergency Cases</h1></th>
+                    <th scope="col">
+                          <form>
+                            <div class="form-group">
+                                <label class="label1"> Date: </label> <input type="date" class="form-control" id="date">
+                            </div>
+                          </form>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td>Patient ID</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" disabled class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-outline-info waves-effect btn0">GENERATE</button>  
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="hello">Assign Doctor</td>
+                            <td colspan="2">
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect04">
+                                      <option selected>Doctor Name</option>
+                                      <option value="1">Dr. Varun Bhatt</option>
+                                      <option value="2">Dr. Karan Dhillon</option>
+                                      <option value="3">Dr. Navpreet Singh</option>
+                                      <option value="3">Dr. Hargun Kaur</option>
+                                      <option value="3">Dr. Karnal Singh</option>
+                                      <option value="3">Dr. Winston D'Souza</option>
+                                      <option value="3">Dr. Anupreeti Singh</option>
+                                      <option value="3">Dr. Ajay Kulkarni</option>
+                                      <option value="3">Dr. Alia Chopra</option>
+                                      <option value="3">Dr. Abdul Virdi</option>
+                                      <option value="3">Dr. Shaik Shubam Singh</option>
+                                      <option value="3">Dr. Saloni Pal</option>
+                                    </select>
+                                </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="hello">Chief Complaints</td>
+                            <td colspan="2">
+                                <form>
+                                    <div class="form-group">
+                                        <textarea class="form-control" class="a1"> </textarea>
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td colspan="3">
+                                <button type="button" class="btn btn-lg btn-outline-info waves-effect btn1">SUBMIT</button>  
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+           
+        </div>
+<%- include ('partials/footer') -%>

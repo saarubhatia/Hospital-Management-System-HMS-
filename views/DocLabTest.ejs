@@ -1,0 +1,97 @@
+<%- include ('partials/header') -%>
+        <div class="container">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="a0"> <h1 id="labtest"> LAB TEST: </h1></th>
+                    <th scope="col">
+                        
+                          <form>
+                            <div class="form-group">
+                             <label>Date:</label>   <input type="date" class="form-control" id="date">
+                            </div>
+                          </form>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td>Treatment ID</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Doctor ID</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Patient ID</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>TESTS RECOMMENDED</h3>
+        
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Serial No.</th>
+                    <th scope="col">Test Name</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody1">
+                  <tr>
+                    <th class="count" scope="row"></th>
+                    <td>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" class="a2">
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-info waves-effect btn0 add-row"> + </button>
+                    </td>
+                  </tr>
+                </tbody>
+                  <tr>
+                    <td>
+                        COMMENTS
+                    </td>
+                    <td>
+
+                      <form>
+                          <div class="form-group">
+                              <textarea class="form-control" id="textarea"></textarea>
+                          </div>
+                      </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-info waves-effect btn0">SKIP</button>
+                      <button type="button" class="btn btn-outline-info waves-effect btn0">SUBMIT</button>
+                    </td>
+                </tr>
+              </table>
+        </div>
+<%- include ('partials/footer') -%>

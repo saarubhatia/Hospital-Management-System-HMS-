@@ -1,0 +1,449 @@
+<%- include ('partials/header') -%>
+<div class="container">
+    <div class="row row1" style="margin-left: -15%;">
+      <div class="col-md-4 col-sm-6 def">
+        <a href="/DocAddPres"><div class="card" style="width: 20rem; height: 15.5rem;">
+          <img class="card-img-top" src="images/generate_prescription.png" alt="Card image cap">
+        </div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 def">
+        <a href="/DocLabTest"><div class="card" style="width: 20rem; height: 15.5rem;">
+          <img class="card-img-top" src="images/assign_lab_test.png" alt="Card image cap">
+        </div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 def">
+        <a href="/DocAssignedRooms"><div class="card" style="width: 20rem; height: 15.5rem;">
+          <img class="card-img-top" src="images/assigned_rooms.png" alt="Card image cap">
+        </div></a>
+      </div>
+    </div>
+<div class="presc">
+ <h3>Recent Generated Prescriptions List</h3>
+</div>
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Treatment Id</th>
+            <th scope="col">Patient Name</th>
+            <th scope="col">Patient Id</th>
+            <th scope="col">View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">10056</td>
+            <td>Vivek Sharma</td>
+            <td>10002</td>
+            <td>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View</button>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <table class="table table-bordered table-hover table-striped">
+                      <thead class="thead-dark">
+                      <tr>
+                          <th scope="col" class="a0"> <h1 class="modal-title" id="presc"> Prescription:</h1></th>
+                          <th scope="col">
+                                <form>
+                                  <div class="form-group">
+                                      <label class="label1"> Date: </label> <input disabled type="date" class="form-control" id="date">
+                                  </div>
+                                </form>
+                          </th>
+                      </tr>
+                      </thead>
+                      </table>
+                    </div>
+                <div class="modal-body">
+                  
+                    <table class="table table-bordered table-hover table-striped" >
+                    <tbody>
+                        <tr>
+                                <td>Treatment ID</td>
+                                <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <input disabled type="text" class="form-control" class="a1" value="10056">
+                                        </div>
+                                      </form>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Doctor Name</td>
+                                <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <input disabled type="text" class="form-control" class="a1" value="Mr. Rohit Khullar">
+                                        </div>
+                                      </form>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Patient ID</td>
+                                <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <input disabled type="text" class="form-control" class="a1" value="10002">
+                                        </div>
+                                      </form>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Chief Complaints</td>
+                                <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <input disabled type="text" class="form-control" class="a1" value="Headache">
+                                        </div>
+                                      </form>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>Diagnosis</td>
+                                <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <input disabled type="text" class="form-control" class="a1" value="Severe Pain">
+                                        </div>
+                                    </form>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>TREATMENT GIVEN</h3>
+                <table class="table table1">
+                    <thead>
+                      <tr>
+                        <th scope="col">Medicine Name</th>
+                        <th scope="col">Dosage</th>
+                        <th scope="col">Quantity(days)</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody1">
+                      <tr>
+                        <td>
+                            <form>
+                                <div class="form-group">
+                                    <input disabled type="text" class="form-control" class="a2" value="Medicine 1">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <input disabled class="quantity" min="0" name="quantity" value="2" type="text">
+                        </td>
+                        <td>
+                             
+                            <form>
+                                <div class="form-group">
+                                    <input disabled type="text" class="form-control" id="a3" value="5 days">
+                                </div>
+                            </form>
+                        </td>
+                      </tr>
+                    </tbody>
+                      <tr>
+                          <td>
+                              COMMENTS
+                          </td>
+                          <td colspan="2">
+    
+                            <form>
+                                <div class="form-group">
+                                    <textarea disabled class="form-control" id="textarea">Directions: Follow XYZ</textarea>
+                                </div>
+                            </form>
+                          </td>
+                      </tr>
+                     
+                  </table>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+  </div>
+</div>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob D'Silva</td>
+            <td>10035</td>
+            <td>
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View</button>
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <table class="table table-bordered table-hover table-striped">
+                          <thead class="thead-dark">
+                          <tr>
+                              <th scope="col" class="a0"> <h1 class="modal-title" id="presc"> Prescription:</h1></th>
+                          </tr>
+                          </thead>
+                          </table>
+                        </div>
+                    <div class="modal-body">
+                      
+                        <table class="table table-bordered table-hover table-striped" >
+                        <tbody>
+                            <tr>
+                                    <td>Treatment ID</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Doctor ID</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Patient ID</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Chief Complaints</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Diagnosis</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                        </form>
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>TREATMENT GIVEN</h3>
+                    <table class="table table1">
+                        <thead>
+                          <tr>
+                            <th scope="col">Medicine Name</th>
+                            <th scope="col">Dosage</th>
+                            <th scope="col">Quantity(days)</th>
+                          </tr>
+                        </thead>
+                        <tbody class="tbody1">
+                          <tr>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input disabled type="text" class="form-control" class="a2">
+                                    </div>
+                                </form>
+                            </td>
+                            <td>
+                                <input disabled class="quantity" min="0" name="quantity" value="1" type="text">
+                            </td>
+                            <td>
+                                 
+                                <form>
+                                    <div class="form-group">
+                                        <input disabled type="text" class="form-control" id="a3">
+                                    </div>
+                                </form>
+                            </td>
+                          </tr>
+                        </tbody>
+                          <tr>
+                              <td>
+                                  COMMENTS
+                              </td>
+                              <td colspan="2">
+        
+                                <form>
+                                    <div class="form-group">
+                                        <textarea disabled class="form-control" id="textarea"></textarea>
+                                    </div>
+                                </form>
+                              </td>
+                          </tr>
+                         
+                      </table>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+    
+      </div>
+    </div>
+    
+    
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Rakesh Singh</td>
+            <td>10054</td>
+            <td>
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View</button>
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <table class="table table-bordered table-hover table-striped">
+                          <thead class="thead-dark">
+                          <tr>
+                              <th scope="col" class="a0"> <h1 class="modal-title" id="presc"> Prescription:</h1></th>
+                          </tr>
+                          </thead>
+                          </table>
+                        </div>
+                    <div class="modal-body">
+                      
+                        <table class="table table-bordered table-hover table-striped" >
+                        <tbody>
+                            <tr>
+                                    <td>Treatment ID</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Doctor ID</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Patient ID</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Chief Complaints</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                          </form>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>Diagnosis</td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+                                                <input disabled type="text" class="form-control" class="a1">
+                                            </div>
+                                        </form>
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>TREATMENT GIVEN</h3>
+                    <table class="table table1">
+                        <thead>
+                          <tr>
+                            <th scope="col">Medicine Name</th>
+                            <th scope="col">Dosage</th>
+                            <th scope="col">Quantity(days)</th>
+                          </tr>
+                        </thead>
+                        <tbody class="tbody1">
+                          <tr>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input disabled type="text" class="form-control" class="a2" placeholder="Medicine 1" value="Medicine 1">
+                                    </div>
+                                </form>
+                            </td>
+                            <td>
+                                <input disabled class="quantity" min="0" name="quantity" placeholder="1" value="1" type="text">
+                            </td>
+                            <td>
+                                 
+                                <form>
+                                    <div class="form-group">
+                                        <input disabled type="text" class="form-control" placeholder="5 days" id="a3" value="5 days">
+                                    </div>
+                                </form>
+                            </td>
+                          </tr>
+                        </tbody>
+                          <tr>
+                              <td>
+                                  COMMENTS
+                              </td>
+                              <td colspan="2">
+        
+                                <form>
+                                    <div class="form-group">
+                                        <textarea disabled class="form-control" id="textarea" value="Direction of Use: Twice a day."></textarea>
+                                    </div>
+                                </form>
+                              </td>
+                          </tr>
+                         
+                      </table>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+    
+      </div>
+    </div>
+    
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+<%- include ('partials/footer') -%>

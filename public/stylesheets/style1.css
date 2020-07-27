@@ -1,0 +1,66 @@
+body
+{
+    /*f7941d or rgba(247, 148, 29),  87,89,93*/
+    background-color:#415F9D;
+    /* background-image: radial-gradient(rgba(31,122,61, 0.349),  rgba(31,122,61, 0.527), rgba(31,122,61,1)); */
+    /*background-image: radial-gradient(rgba(247, 148, 29,0.3),  rgba(247, 148, 29,0.6), rgb(247, 148, 29,1));*/
+    /*background-color: black;*/
+}
+
+.logo{
+    height: 25%;
+    max-width: 25%;
+    position:absolute;
+    top: 35%;
+    left: 44%;
+    z-index: 2;
+    border-radius: 100%;
+}
+
+.carousel
+{
+    float: left;
+    margin-top: 5%;
+    width:50%;
+    height:85%;
+    box-shadow: 0 0 8px 4px rgba(9, 77, 35, 0.2), 0 0 20px 6px rgba(0, 0, 0, 0.19);
+    background-color:#eee;
+}
+.carousel-img
+{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.carousel-caption
+{
+    background-color: rgba(218,218,218,0.5);
+}
+q
+{
+    color: black;
+    font-family: 'Cormorant';
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.reg-form,.login-form
+{
+    background-color:#eee;
+    float: right;
+    margin-top: 5%;
+    width:50%;
+    height:85%;
+    padding: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-row
+{
+    line-height: 1;
+}
+.log-btn
+{
+    width: 100%;
+}

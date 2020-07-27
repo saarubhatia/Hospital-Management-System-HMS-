@@ -1,0 +1,17 @@
+body{
+    counter-reset:0;  
+}
+.count{
+    counter-increment:1;   
+  content: counter(count-value);
+}
+#labtest{
+    text-align:center;
+}
+#date{
+   display:inline-block;
+   width:60%;
+}
+label{
+    font-size: x-large;
+}

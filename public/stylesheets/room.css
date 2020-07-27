@@ -1,0 +1,10 @@
+#assign{
+    text-align:center;
+}
+#date{
+    display:inline-block;
+    width:60%;
+}
+label{
+    font-size: x-large;
+}

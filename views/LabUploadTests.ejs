@@ -1,0 +1,47 @@
+<%- include ('partials/header') -%>
+        <div class="container">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="a0"> <h1 id="presc"> Upload Lab Tests</h1></th>
+                </tr>
+                </thead>
+            </table>
+            <table class="table table-bordered table-hover table-striped">
+                <tbody>
+                    <tr>
+                            <td class="large">Treatment ID:</td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                            <td class="large date"> Patient ID: </td>
+                            <td>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" class="a1">
+                                    </div>
+                                  </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Upload Tests Report</td>
+                        <td colspan="2">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                              </div>
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <button type="button" class="btn btn-lg btn-outline-info waves-effect btn1">SUBMIT</button>
+                    </td>   
+                </tr>
+                </tbody>
+              </table>
+        </div>
+    <%- include ('partials/footer') -%>
